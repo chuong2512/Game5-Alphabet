@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4007262303413681220}
   - component: {fileID: 4007262303413681223}
   - component: {fileID: 4007262303413681222}
-  - component: {fileID: 6622660414381027193}
+  - component: {fileID: 6899860079858908453}
   m_Layer: 5
   m_Name: ChooseSongScreen
   m_TagString: Untagged
@@ -90,7 +90,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &6622660414381027193
+--- !u!114 &6899860079858908453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,9 +99,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4007262303413681224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e952bddda38e4d35adc74f0dba84226a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4db8bd2c5f2546cfafa596c11bc3b18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 4007262303413681222}
-  _id: 3
   _closeBtn: {fileID: 0}
+  _type: 3

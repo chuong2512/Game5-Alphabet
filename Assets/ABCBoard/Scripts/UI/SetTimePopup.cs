@@ -16,6 +16,11 @@ namespace BabySound.Scripts.UI
             GetComponent<RectTransform>().DOAnchorPosY(90, 0.5f);
         }
 
+        public override ScreenType GetID()
+        {
+            return ScreenType.SetTimePopup;
+        }
+
         protected override void OnValidate()
         {
             base.OnValidate();

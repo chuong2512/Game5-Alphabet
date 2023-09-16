@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 
 namespace BabySound.Scripts
 {
-    public class BaseScreen : BasePopup
+    public abstract class BaseScreen : BasePopup
     {
         public override void Hide()
         {

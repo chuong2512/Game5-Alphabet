@@ -17,9 +17,12 @@ public enum ScreenType
     SongScreen,
     SetTimePopup,
     UnlockPopup,
-    ComingSoon
+    ComingSoon,
+    RateGame,
+    HUD,
 }
 
+[DefaultExecutionOrder(-99)]
 public class UIManager : PersistentSingleton<UIManager>
 {
     [SerializeField] private BasePopup[] _screens;
@@ -61,11 +64,7 @@ public class UIManager : PersistentSingleton<UIManager>
         _screens = listScreen.ToArray();
     }
 #endif
-
-    void Start()
-    {
-        OpenScreen(ScreenType.HomeScreen);
-    }
+    
 
     [Button]
     public void OpenScreen(ScreenType screenType)
@@ -82,11 +81,11 @@ public class UIManager : PersistentSingleton<UIManager>
             }
         }
 
-        BasePopup screen = _listScreens.Find(s => s.ID == screenType);
+        BasePopup screen = _listScreens.Find(s => s.GetID() == screenType);
 
         if (screen == null)
         {
-            screen = Instantiate(_screens.ToList().Find(popup => popup.ID == screenType), transform);
+            screen = Instantiate(_screens.ToList().Find(popup => popup.GetID() == screenType), transform);
             _listScreens.Add(screen);
         }
 
@@ -96,7 +95,7 @@ public class UIManager : PersistentSingleton<UIManager>
         screen.Add();
         _currentScreen = screen;
     }
-    
+
     [Button]
     public void OpenScreen<TModel>(ScreenType screenType, TModel tModel)
     {

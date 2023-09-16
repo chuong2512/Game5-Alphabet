@@ -2,11 +2,10 @@
 
 namespace BabySound.Scripts
 {
-    public class BasePopup : MonoBehaviour, IPopup
+    public abstract class BasePopup : MonoBehaviour, IPopup
     {
         [SerializeField] private CanvasGroup _canvasGroup;
-        [SerializeField] private ScreenType _id;
-        public ScreenType ID => _id;
+        public abstract ScreenType GetID();
 
         protected virtual void OnValidate()
         {
@@ -34,7 +33,7 @@ namespace BabySound.Scripts
             SetActive(false);
         }
 
-        public void Back()
+        public virtual void Back()
         {
             UIManager.Instance.Back();
         }

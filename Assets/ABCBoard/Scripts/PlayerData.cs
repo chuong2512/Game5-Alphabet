@@ -19,6 +19,15 @@ public class PlayerData : BaseData
     public long time;
     public string timeRegister;
 
+    public bool isRate;
+
+    public void Rated()
+    {
+        isRate = true;
+    }
+
+    public bool IsRate => isRate;
+    
     public void SetTimeRegister(long timeSet)
     {
         timeRegister = DateTime.Now.ToBinary().ToString();
@@ -68,7 +77,7 @@ public class PlayerData : BaseData
     {
         intDiamond += a;
 
-        GameManager.OnChangeCoin.Invoke(a);
+        GameManager.OnChangeCoin?.Invoke(a);
 
         Save();
     }
@@ -112,7 +121,7 @@ public class PlayerData : BaseData
             intDiamond = 0;
         }
 
-        GameManager.OnChangeCoin.Invoke(-a);
+        GameManager.OnChangeCoin?.Invoke(-a);
 
         Save();
     }

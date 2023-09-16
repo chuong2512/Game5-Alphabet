@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace BabySound.Scripts
 {
-    public class AppPopup : BasePopup
+    public abstract class AppPopup : BasePopup
     {
         [SerializeField] private Button _closeBtn;
 
@@ -16,7 +16,7 @@ namespace BabySound.Scripts
             transform.DOScale(Vector3.one, 0.2f);
         }
 
-        private void Start()
+        protected virtual void Start()
         {
             _closeBtn?.onClick.AddListener(Back);
         }

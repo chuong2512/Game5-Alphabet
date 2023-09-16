@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 4007262303413681220}
   - component: {fileID: 4007262303413681222}
   - component: {fileID: 7561201677275406647}
+  - component: {fileID: 689665202090155387}
   m_Layer: 5
   m_Name: RegisterScreen
   m_TagString: Untagged
@@ -285,7 +286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 4007262303413681222}
-  _id: 2
   _closeBtn: {fileID: 0}
   _buttons:
   - {fileID: 416139903956098693}
@@ -294,6 +294,19 @@ MonoBehaviour:
   - {fileID: 5553744711940729031}
   - {fileID: 3225498783283216879}
   _text: {fileID: 8853467629275109894}
+--- !u!114 &689665202090155387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007262303413681224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2765c9810d9d7043a0394ecc9ad2456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textRemain: {fileID: 8853467629275109894}
 --- !u!1 &4968547422937518185
 GameObject:
   m_ObjectHideFlags: 0

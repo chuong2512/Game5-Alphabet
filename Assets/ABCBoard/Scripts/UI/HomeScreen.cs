@@ -10,6 +10,11 @@ namespace BabySound
     {
         [SerializeField] private TextMeshProUGUI _coinTMP;
 
+        public override ScreenType GetID()
+        {
+            return ScreenType.HomeScreen;
+        }
+
         protected override void Start()
         {
             base.Start();

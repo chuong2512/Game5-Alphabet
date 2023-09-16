@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace BabySound
 {
-    public class AppScreen : BaseScreen
+    public abstract class AppScreen : BaseScreen
     {
         [SerializeField] private Button _closeBtn;
 

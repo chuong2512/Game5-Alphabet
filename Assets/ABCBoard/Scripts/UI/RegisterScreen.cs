@@ -19,5 +19,18 @@ namespace BabySound
                 _buttons[i].Index = i;
             }
         }
+
+        public override ScreenType GetID()
+        {
+            return ScreenType.RegisterScreen;
+        }
+
+        public override void Back()
+        {
+            if (GameDataManager.Instance.playerData.time > 0)
+            {
+                base.Back();
+            }
+        }
     }
 }

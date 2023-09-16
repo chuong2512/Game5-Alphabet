@@ -31,6 +31,8 @@ public class SongScreen : BaseScreenWithModel<SongModel>
         var songSo = GameDataManager.Instance.songSo;
         _songImage.sprite = songSo.GetSongWithID(_songID).icon;
     }
+
+    public override ScreenType GetID() => ScreenType.SongScreen;
 }
 
 public class SongModel
