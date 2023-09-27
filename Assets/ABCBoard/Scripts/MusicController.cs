@@ -48,7 +48,7 @@ public class MusicController : MonoBehaviour
 
     public void AddDiamonds(int value)
     {
-        IAPManager.OnPurchaseSuccess = () =>
+        /*IAPManager.OnPurchaseSuccess = () =>
         {
             playerData.AddDiamond(value);
             diamonds.text = "x" + playerData.intDiamond;
@@ -75,6 +75,6 @@ public class MusicController : MonoBehaviour
             case 250:
                 IAPManager.Instance.BuyProductID(IAPKey.PACK6);
                 break;
-        }
+        }*/
     }
 }
