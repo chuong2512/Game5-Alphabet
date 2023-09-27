@@ -20,6 +20,7 @@ public enum ScreenType
     ComingSoon,
     RateGame,
     HUD,
+    Menu,
 }
 
 [DefaultExecutionOrder(-99)]

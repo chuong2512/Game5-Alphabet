@@ -27,7 +27,7 @@ public class GameManager : PersistentSingleton<GameManager>
 
     private void SetFirstScreen()
     {
-        _uiManager.OpenScreen(ScreenType.HomeScreen);
+        _uiManager.OpenScreen(ScreenType.Menu);
         
         if (_gameData.playerData.time <= 0)
         {

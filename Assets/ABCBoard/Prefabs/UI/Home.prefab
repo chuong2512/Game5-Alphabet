@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasGroup: {fileID: 4007262303413681222}
-  _closeBtn: {fileID: 0}
+  _closeBtn: {fileID: 3851586092168800926}
   _coinTMP: {fileID: 8692722415384640412}
 --- !u!1 &4103533887369052112
 GameObject:
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ABC BOARD
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3900c66eceee2c940988f49aba7f0cff, type: 2}
   m_sharedMaterial: {fileID: 7422214277480326461, guid: 3900c66eceee2c940988f49aba7f0cff, type: 2}
@@ -876,7 +876,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 27}
-  m_SizeDelta: {x: 884.341, y: 172.4471}
+  m_SizeDelta: {x: 503.7241, y: 172.4471}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &6346592137547058264
 CanvasRenderer:
